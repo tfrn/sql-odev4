@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>sql dersi ödev ıv</title>
+</head>
+<body>
+<center><h1> PATIKA.DEV || SQL DERSİ 4. ÖDEVİ </h1></center>
+<div class="h4 pb-2 mb-4 text-danger border-bottom border-danger"></div>
+<h3>sorular;</h3>
+<div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+    <ul>
+        <li>1. film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.</li>
+        <li>2. film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?</li>
+        <li>3. film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?</li>
+        <li>4. country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?</li>
+        <li>5. city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?</li>
+    </ul>
+</div>
+<h3>cevaplar;</h3>
+<div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+<ul>
+    <li>1. SELECT DISTINCT replacement_cost FROM film</li>
+    <li>2. SELECT COUNT(DISTINCT replacement_cost) FROM film</li>
+    <li>3. SELECT COUNT() FROM film WHERE title LIKE 'T%'AND rating IN ('G')</li>
+    <li>4. SELECT COUNT() FROM country WHERE country LIKE '_ _ _ _ _'</li>
+    <li>5. SELECT COUNT(*) FROM city WHERE city ILIKE '%r'</li>
+</ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
